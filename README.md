@@ -2,6 +2,18 @@
 
 ## What is Kubernetes?
 
+-->  Kubernetes (sometimes shortened to K8s with the 8 standing for the number of letters between the “K” and the “s”) is an open source system to deploy, scale, and manage containerized applications anywhere.
+
+* Kubernetes manage :-
+
+1] Container management 
+2] multi nondes 
+3] Loadbalansar
+4] Autoscaling
+5] Security management
+6] Autoheling
+7] Monitering
+
 ## Why we use Kubernetes?
 
 ## Architecture of Kubernetes
