@@ -42,6 +42,12 @@
 
 ## Lifecycle of kubernetes
 
+--> 
+
+1] Define Application :- Developes define the application and its components using kubernetes manifests (YAML files) that describe resources such as Podes, Services, Deployments, ConfigMaps, and more.
+
+2] Containerization :- Containerize the application by creating Docker 
+
 ## K8s Cluster
 - Minikube
 - Kind
