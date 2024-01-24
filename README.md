@@ -12,10 +12,10 @@ Ans:Benefits of kubernetes
 (iii)Monitoring
     Monitoring mode in Kubernetes is important because it allows you to detect and resolve issues with the cluster and its applications before they become major problems. It also helps you to optimize the performance of the cluster and its applications. Additionally, monitoring mode can help you to understand the overall health and utilization of the cluster, and to make informed decisions about scaling and resource allocation.
 (iv) Autoscaling
-    The main point of the cloud and Kubernetes is the ability to scale in the way that we can be able to add new nodes if the existing ones get full and at the same if the demand drops we should be able to delete those nodes. To solve this problem we can use Kubernetes auto scaler which is a component that allows us to scale the resources up . There are three different methods of Kubernetes autoscaling:
-  a)Horizontal Pod Autoscaler (HPA)
-  b)Vertical Pod Autoscaler (VPA)
-  c)Cluster Autoscaler (CA)
+    The main point of the cloud and Kubernetes is the ability to scale in the way that we can be able to add new nodes if the existing ones get full and at the same if the demand drops we should be able to delete those nodes . There are three different methods of Kubernetes autoscaling:
+  a)Horizontal Pod Autoscaler(HPA)
+  b)Vertical Pod Autoscaler(VPA)
+  c)Cluster Autoscaler(CA)
 (v)Load balancer
    Service discovery and load balancing Kubernetes can expose a container using the DNS name or using their own IP address. If traffic to a container is high, Kubernetes is able to load  balance and distribute the network traffic so that the deployment is stable. 
 (vi)Multi-nodes
@@ -24,11 +24,10 @@ Ans:Benefits of kubernetes
 ## Architecture of Kubernetes
 Ans: Kubernetes Cluster mainly consists of Worker Machines called Nodes and a Control        Plane.In a cluster, there is at least one worker node.The Kubectl CLI communicates with the Control Plane and Control Plane manages the Worker Nodes.
  * Control Plane Components
-  It is basically a collection of various components that help us in managing the overall health of a cluster.  For example, if you want to set up new pods, destroy pods, scale pods, 
-etc. Basically, 4 services run on Control Plane:
+  It is basically a collection of various components that help us in managing the overall health of a cluster.  For example, if you want to set up new pods, destroy pods, scale pods, etc. Basically, 4 components run on Control Plane:
 
 i)API server
-  It is like an initial gateway to the cluster that listens to updates or queries via CLI like Kubectl. Kubectl communicates with API Server to inform what needs to be done like creating pods or deleting pods etc. It also works as a gatekeeper. It generally validates requests received and then forwards them to other processes. No request can be directly passed to the cluster, it has to be passed through the API Server.
+  It is like an initial gateway to the cluster that listens to updates or queries via CLI like Kubectl. Kubectl communicates with API Server to inform what needs to be done like creating pods or deleting pods etc. It generally validates requests received and then forwards them to other processes. No request can be directly passed to the cluster, it has to be passed through the API Server.
 ii)Scheduler
   When API Server receives a request for Scheduling Pods then the request is passed on to the Scheduler. It intelligently decides on which node to schedule the pod for better efficiency of the cluster.
 iii)Controller-Manager
@@ -45,7 +44,7 @@ kubelet interacts with both the container runtime as well as the Node. It is the
 iii)kube-proxy
 It is the process responsible for forwarding the request from Services to the pods. It has intelligent logic to forward the request to the right pod in the worker node
 iv)POD
-A pod is the smallest unit that exists in Kubernetes. A specific pod can have one or more applications. The nature of Pods is ephemeral this means that in any case if a pod fails then Kubernetes can and will automatically create a new replica/ duplicate of the said pod and continue the operation.It is a deployable entity of kubernetes
+A pod is the smallest unit that exists in Kubernetes. A specific pod can have one or more applications.It is a deployable entity of kubernetes
 
 ## K8s Cluster
 - Minikube
