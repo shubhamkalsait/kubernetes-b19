@@ -7,11 +7,17 @@
 * Kubernetes manage :-
 
 1] Container management 
-2] multi nondes 
+
+2] multi nondes
+
 3] Loadbalansar
+
 4] Autoscaling
+
 5] Security management
+
 6] Autoheling
+
 7] Monitering
 
 ## Why we use Kubernetes?
