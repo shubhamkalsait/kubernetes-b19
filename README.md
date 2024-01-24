@@ -10,34 +10,34 @@
 -  **Its features address many challenges associated with deploying and maintaining distributed systems**
 -  **Key features of Kubernetes include:**
    
-   **Container Orchestration :**                                                                                             
+   <ins>**Container Orchestration :**</ins>                                                                                             
               Automates deployment and management of containerized applications.
    
-   **Scalability:**                                                                                                          
+   <ins>**Scalability:**</ins>                                                                                                          
               Dynamically scales applications based on demand for optimal resource use.
    
-   **High Availability:**                                                                                                    
+   <ins>**High Availability:**</ins>                                                                                                    
               Ensures reliable application performance by distributing containers across nodes.
    
-   **Portability:**                                                                                                         
+   <ins>**Portability:**<ins>                                                                                                         
                Provides a consistent platform across diverse infrastructures and environments.
      
-   **Resource Efficiency:**                                                                                                 
+   <ins>**Resource Efficiency:**</ins>                                                                                                 
                Optimizes resource allocation and scales applications based on utilization.
    
-   **Service Discovery and Load Balancing:**                                                                                 
+   <ins>**Service Discovery and Load Balancing:**</ins>                                                                                 
                Facilitates exposing and balancing traffic for applications.
    
-   **Community and Ecosystem:**                                                                                              
+   <ins>**Community and Ecosystem:**</ins>                                                                                              
                benefits from a large, active open-source community and extensive tooling.
    
-   **Rolling Updates and Rollbacks:**                                                                                        
+   <ins>**Rolling Updates and Rollbacks:**</ins>                                                                                        
                 Supports seamless application updates and automatic rollbacks.
    
-   **Security and Compliance:**                                           
+   <ins>**Security and Compliance:**</ins>                                           
                 Implements features for securing applications and managing access.
    
-   **Cost Savings:**
+   <ins>**Cost Savings:**</ins>
                 Contributes to savings through optimized resource use and automation.
 
 ## Architecture of Kubernetes
