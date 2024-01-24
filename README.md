@@ -80,8 +80,25 @@
      -   A Pod is the smallest deployable unit in Kubernetes.
      -   It's like wrapper around container.
      -   The worker node executes and hosts these Pods, running the specified containers within them.
-## Lifecycle of kubernetes
+<p align="center">
+    <img src="https://kubernetes.io/images/docs/kubernetes-cluster-architecture.svg"
+ width="700" height="380">
+</p>
 
+---
+
+## Lifecycle of kubernetes
+-   A user or application initiates a request to create a new pod.
+-   The API server, the central control point, communicates with ETCD, a persistent data store, to gather information about available nodes.
+-   The scheduler, responsible for pod placement, analyzes resource availability and constraints to choose the best node for the pod.
+-   The API server informs the kubelet, the agent running on the selected node, about the pod scheduling decision.
+-   The kubelet creates the pod's containers and manages its lifecycle on that node.
+-   The kubelet sends status updates back to the API server about the pod's progress.
+-   The API server stores the updated cluster state information in ETCD, ensuring a consistent view for all components.
+<p align="center">
+    <img src="https://k21academy.com/wp-content/uploads/2020/06/Kubernetes_Architecture-1.png"
+ width="700" height="380">
+</p>
 ## K8s Cluster
 - Minikube
 - Kind
