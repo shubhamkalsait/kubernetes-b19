@@ -53,9 +53,9 @@ OR
 
 ### Architecture of Kubernetes:-
 
-Its working is based on nodes. 
+-- Its working is based on nodes. 
 
-It contains two nodes:
+-It contains two nodes:
 
 A-Master Node: It controls  all activities in Kubernetes
 
@@ -63,20 +63,21 @@ B-Worker Nodes: It completes the task which is given by Master node
 
 #Master node Structure:-
 
-> API Server: It is used for talking with the worker nodes and giving them required information.
+>  API Server: It is used for talking with the worker nodes and giving them required information.
 
-> Controller Manager: It is used for gathering information of nodes and sending that to API Server and also useful for changing the current state of cluster to desired state.
+>  Controller Manager: It is used for gathering information of nodes and sending that to API Server and also useful for changing the current state of cluster to desired state.
 
-> Scheduler: It is responsible for dispersing workload in the master node and it also tracks the workload on cluster nodes.
-> etcd : It stores the configuration information required by nodes in the cluster.
+>  Scheduler: It is responsible for dispersing workload in the master node and it also tracks the workload on cluster nodes.
+
+>  etcd : It stores the configuration information required by nodes in the cluster.
 
 #Worker node components:
 
-> kublet : It actually runs the pods and updates node status. Starts and stops pods as directed by the Scheduler.
+>  kublet : It actually runs the pods and updates node status. Starts and stops pods as directed by the Scheduler.
 
-> kube-proxy: Exposes services and routes network traffic to the proper resource on the node.
+>  kube-proxy: Exposes services and routes network traffic to the proper resource on the node.
 
-> Container Runtime:  It is used for running and managing containers lifecycle.
+>  Container Runtime:  It is used for running and managing containers lifecycle.
 
 
 <img width="551" alt="Screenshot 2024-01-25 205130" src="https://github.com/Pratikesh05/kubernetes-b19/assets/157086376/fa06b3db-35a6-4d6b-995f-0d2b12013dd3">
@@ -88,19 +89,19 @@ B-Worker Nodes: It completes the task which is given by Master node
 <img width="543" alt="K8's" src="https://github.com/Pratikesh05/kubernetes-b19/assets/157086376/b4b90505-54cc-4313-8d83-742f0898138d">
 
 
->> A fresh pod creation request is made by a user or application.
+>  A fresh pod creation request is made by a user or application.
 
->> To obtain information about accessible nodes, the central control point, the API server, talks with the permanent data store, ETCD.
+>  To obtain information about accessible nodes, the central control point, the API server, talks with the permanent data store, ETCD.
 
->> In order to select the optimal node for the pod, the scheduler—which is in charge of pod placement—evaluates resource availability and limitations.
+>  In order to select the optimal node for the pod, the scheduler—which is in charge of pod placement—evaluates resource availability and limitations.
 
->>The agent operating on the chosen node, the kubelet, receives notification from the API server regarding the pod scheduling decision.
+>  The agent operating on the chosen node, the kubelet, receives notification from the API server regarding the pod scheduling decision.
 
->> On that node, the kubelet builds the pod's containers and oversees its lifespan.
+>  On that node, the kubelet builds the pod's containers and oversees its lifespan.
 
->> The kubelet updates the API server on the progress of the pod by sending status updates.
+>  The kubelet updates the API server on the progress of the pod by sending status updates.
 
->> To guarantee that all components see the updated cluster state data consistently, the API server saves it in ETCD.
+>  To guarantee that all components see the updated cluster state data consistently, the API server saves it in ETCD.
 
 ## K8s Cluster
 - Minikube
