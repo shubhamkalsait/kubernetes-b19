@@ -19,7 +19,7 @@
    <ins>**High Availability:**</ins>                                                                                         
               Ensures reliable application performance by distributing containers across nodes.
    
-   <ins>**Portability:**<ins>                                                                                                
+   <ins>**Portability:**</ins>                                                                                                
                Provides a consistent platform across diverse infrastructures and environments.
      
    <ins>**Resource Efficiency:**</ins>                                                                                       
