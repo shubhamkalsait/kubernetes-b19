@@ -72,7 +72,18 @@
 
 2] Kub-Proxy :- 
 
- + Maintains network rules on nodes, enabling communication between pods and external network. 
+ + Maintains network rules on nodes, enabling communication between pods and external network.
+ + Kube-proxy allow nerwork communication inside the cluster.
+
+3] Container Engine :- 
+
++ To create container as run.
+
+4] POD :- 
+
++ The smallest and simplest unit in the kubernetes object model. it represents a single instance of a runnig process in a cluster.
++ Pod are deployment entity of the kubernets. Pod is rapper around the container.
+
 
 ## Lifecycle of kubernetes
 
