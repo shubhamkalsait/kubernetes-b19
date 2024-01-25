@@ -41,6 +41,8 @@
 
 --> <img src="https://media.licdn.com/dms/image/D5612AQFWD2o9vSnA-g/article-cover_image-shrink_720_1280/0/1693947583493?e=1711584000&amp;v=beta&amp;t=J24Pmufx_EVIT-8nP0y4tMpF5TQV3HWgo_aC_Iv75p4" loading="lazy" id="ember36" class="reader-cover-image__img evi-image lazy-image ember-view">
 
+### Master Node :-
+
 1] API Server :- 
 
 * Serves as the entry point for all administrative tasks and management of cluster objects.
@@ -61,8 +63,16 @@
 * Enforces cluster state and manages various controllers ( e.g replication controller, endpoint controller ).
 * Is responsible for maintaining actual state & desire state. It manage all the controller is kubernets clusters.
 
-### Worker Node 
+### Worker Node  ( Minion/Node ) :- 
 
+1] Kubelet :- 
+
+* An agent that runs on each node and communicates with the master node. it ensures that containers are running in a pod. 
+* It responsible to excuter the command which is came from sheduler. kublet make sure that container are runnig in a pod.
+
+2] Kub-Proxy :- 
+
+ + Maintains network rules on nodes, enabling communication between pods and external network. 
 
 ## Lifecycle of kubernetes
 
