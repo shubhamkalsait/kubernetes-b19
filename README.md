@@ -45,11 +45,31 @@
 
 --> 
 
-1] Define Application :- Developes define the application and its components using kubernetes manifests (YAML files) that describe resources such as Podes, Services, Deployments, ConfigMaps, and more.
+1] Define Application :- Developes define the application and its components using kubernetes manifests (YAML files) that describe resources such as Podes, Services, Deployments,ConfigMaps, and more.
 
-2] Containerization :- Containerize the application by creating Docker 
+2] Containerization :- Containerize the application by creating Docker images for each component. These images are stored in container registries.
+
+3] Cluster Provisioning :- Set up a Kubernetes cluster, either on-permises or in the cloud with the neccessary nodes, networking, and storage resources.
+
+4] Deploy Application :- Use Kubernetes manifests or higher-level abstractions like deployments to deploy the application to the cluster. kubernetes takes care of scheduling pods, creating necessary resources, and ensuring the desired state is achieved.
+
+5] Pod Scheduling :-  The kubernetes scheduler determines where to place pods based on resource requirements, node availability, and other constraints.
+
+6] Pod Initialization :- Containers within pods are initialized, and theif lifecycles are managed by the kubelet on each node.
+
+7] Service Exposure :- Expose the application to the external world using kubernetes services or ingress resources. services provide stable endpoints for communication.
+
+8] Scale and Autoscale :- Adjust the number of replicas for a Deployment or Replicaset to scale the application horizontally. kubernetes can also automatically scale based on resource metrics.
+
+9] Monitoring and Logging :- Implement monitoring and logging solutions to observe the health and performance of the application. Kubernetes provides integration with tools like Prometheus and grafana.
+
+10] Updates and Rollbacks :- Make chages to the application by updating kubernetes manifests or using higher-level controllers like deployments. kubernets supports rolling updates and rollbacks to ensure minimal downtime. 
+
+11] Persistent Storage :- If the application requires persistent storage, configure kubernetes volumes or persistent volume claims to manage data storage across pod restarts.
+
 
 ## K8s Cluster
+
 - Minikube
 - Kind
 - Kubeadm
