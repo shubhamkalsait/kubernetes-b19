@@ -41,6 +41,29 @@
 
 --> <img src="https://media.licdn.com/dms/image/D5612AQFWD2o9vSnA-g/article-cover_image-shrink_720_1280/0/1693947583493?e=1711584000&amp;v=beta&amp;t=J24Pmufx_EVIT-8nP0y4tMpF5TQV3HWgo_aC_Iv75p4" loading="lazy" id="ember36" class="reader-cover-image__img evi-image lazy-image ember-view">
 
+1] API Server :- 
+
+* Serves as the entry point for all administrative tasks and management of cluster objects.
+* All the communication appens inside the cluster is with the help of API . API server manages this API communication cluster.
+
+2] ETCD :- 
+
+* A distributed key-value store that stores that stores the configuration data of the cluster, representing the overall state of the cluster at any given point.
+* It like database it hold data in key value formate. ETCD is responcible to store of the cluster that includes number of nodes available number of pods runnig on each nodes.
+
+3] Scheduler :- 
+
+* Assigns work to nodes based on resource availability and constraints.
+* Scheduler is respocible to schedule commands on perticuler worker node.
+
+4] Controller Manager :- 
+
+* Enforces cluster state and manages various controllers ( e.g replication controller, endpoint controller ).
+* Is responsible for maintaining actual state & desire state. It manage all the controller is kubernets clusters.
+
+### Worker Node 
+
+
 ## Lifecycle of kubernetes
 
 --> 
