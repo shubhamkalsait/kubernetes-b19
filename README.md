@@ -2,7 +2,8 @@
 
 ## What is Kubernetes?
 
--->  Kubernetes (sometimes shortened to K8s with the 8 standing for the number of letters between the “K” and the “s”) is an open source system to deploy, scale, and manage containerized applications anywhere.
+-->   Kubernetes, often abbreviated as K8s, is an open-source container orchestration platform designed to automate the deployment, scaling, and management of containerized applications. Containers are lightweight, portable, and consistent environments that package an application and its dependencies, ensuring that it runs reliably across various computing environments.  
+      Kubernetes (sometimes shortened to K8s with the 8 standing for the number of letters between the “K” and the “s”) is an open source system to deploy, scale, and manage containerized applications anywhere.
 
 * Kubernetes manage :-
 
