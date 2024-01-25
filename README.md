@@ -55,7 +55,7 @@
          = Maintenance and Patching :- Periodically, maintenance tasks or security patches may require updates to the application or underlying infrastructure. Kubernetes allows for these updates with minimal disruption, often through strategies like canary deployments or blue-green deployments.
          = Scaling Down and Termination :- If demand decreases or the application is no longer needed, users can scale down or delete resources using kubectl delete commands. Kubernetes gracefully terminates pods and associated resources, ensuring a clean shutdown.
          = Termination (kubectl delete or Helm uninstall) :- When an application is no longer required, users can use commands like kubectl delete or tools like Helm to uninstall and clean up all associated resources. Kubernetes ensures that resources are terminated in an orderly manner.   
-         ![lifecycle of kubernetes](https://cdn-images-1.medium.com/v2/resize:fit:1500/1*WDJmiyarVfcsDp6X1-lLFQ.png)
+         
 
 ## K8S CLUSTER
     = Minikube :- Minikube is a tool that allows you to run a single-node Kubernetes cluster locally on your machine. It's useful for development, testing, and learning Kubernetes without the need for a full-scale cluster.
