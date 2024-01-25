@@ -88,6 +88,7 @@
 ---
 
 ## Lifecycle of kubernetes
+# API SERVER --> ETCD SERVER --> API SERVER --> SCHEDULER --> API SERVER --> KUBELET --> API SERVER --> ETCD
 -   A user or application initiates a request to create a new pod.
 -   The API server, the central control point, communicates with ETCD, a persistent data store, to gather information about available nodes.
 -   The scheduler, responsible for pod placement, analyzes resource availability and constraints to choose the best node for the pod.
@@ -119,5 +120,9 @@ kubectl get nodes       # to get list of nodes
 kubectl get nodes -o wide   # to get IP of the nodes
 kubectl get pods        # to get list of pods
 kubectl get pods -o wide    # to get IP of the pods
+kubectl delete pod my-pod   # to delete an existing pod
+kubectl expose pod my-pod --name my-cluster --port 8080    # to allocate the cluster Ip to the pod
+kubectl expose pod my-pod --name my-cluster --port 8080 --type NodePort    # to expose the application on pod to the node
+kubectl expose pod my-pod --name my-cluster --port 8080 --type LoadBalancer    #to expose the nodes to the internet 
 ```
 __prathamesh__
