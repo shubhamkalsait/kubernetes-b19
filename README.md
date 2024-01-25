@@ -84,7 +84,9 @@ B-Worker Nodes: It completes the task which is given by Master node
 
 ### Lifecycle of kubernetes:-
 
+
 <img width="543" alt="K8's" src="https://github.com/Pratikesh05/kubernetes-b19/assets/157086376/b4b90505-54cc-4313-8d83-742f0898138d">
+
 
 >> A fresh pod creation request is made by a user or application.
 
