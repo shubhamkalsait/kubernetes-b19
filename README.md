@@ -60,7 +60,7 @@
      -   The Scheduler is responsible for assigning workloads, specifically pods, to appropriate nodes.
      -   It selects nodes for new pods based on resource requirements, quality of service requirements, affinity specifications, and other criteria.
        
-     <ins>**Controller Manager:**
+     <ins>**Controller Manager:**</ins>
      -   This component runs various controller processes in the background to regulate the state of the cluster and handle routine tasks.
      -   It helps in maintaining the desired state of the cluster.
        
@@ -68,7 +68,7 @@
      -   The kubelet is responsible for executing commands that come from the Kubernetes control plane, including instructions from the scheduler.
      -   It communicates with the control plane and ensures that containers within pods are running as expected.
        
-     <ins>**Kube-proxy:**</>
+     <ins>**Kube-proxy:**</ins>
      -   Kube-proxy maintains network rules on nodes, allowing communication between Pods.
      -   It handles network forwarding, load balancing, and service-related network tasks.
        
