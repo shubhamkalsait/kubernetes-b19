@@ -119,5 +119,11 @@ kubectl get nodes       # to get list of nodes
 kubectl get nodes -o wide   # to get IP of the nodes
 kubectl get pods        # to get list of pods
 kubectl get pods -o wide    # to get IP of the pods
-```
+```sheell 
+kubectl get service   # to show the infromation about services in your cluster
+kubectl expose pod my-pod --name=my-cluster-ip --port=80 # To Create service object of cluster ip
+kubectl delete pod my-pod          # use to delete a specific pod named "my pod"
+kubectl expose pod my-pod --name=my-nodeport --port=80 --type=NodePort  # is used to craete a new service for a specific pod
+kubectl expose pod my-pod --name=my-loadbalancer --port=80 --type=LoadBalancer   # To expose a pod named "my-pod" with a LoadBalancer service type
+
 __prathamesh__
