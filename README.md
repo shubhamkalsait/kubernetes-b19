@@ -81,8 +81,7 @@
      -   It's like wrapper around container.
      -   The worker node executes and hosts these Pods, running the specified containers within them.
 <p align="center">
-    <img src="https://kubernetes.io/images/docs/kubernetes-cluster-architecture.svg"
- width="700" height="380">
+    <img src="https://spaceliftio.wpcomstaging.com/wp-content/uploads/2022/12/kubernetes-architecture-diagram.png" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style="max-width: 1999px; height: 299px; margin: 0px; width: 464px;" alt="What Is Kubernetes Architecture? - Components Overview" jsname="kn3ccd" aria-hidden="false">
 </p>
 
 ---
@@ -95,10 +94,7 @@
 -   The kubelet creates the pod's containers and manages its lifecycle on that node.
 -   The kubelet sends status updates back to the API server about the pod's progress.
 -   The API server stores the updated cluster state information in ETCD, ensuring a consistent view for all components.
-<p align="center">
-    <img src="https://k21academy.com/wp-content/uploads/2020/06/Kubernetes_Architecture-1.png"
- width="700" height="380">
-</p>
+
 ## K8s Cluster
 - Minikube
 - Kind
