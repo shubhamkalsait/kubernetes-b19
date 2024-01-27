@@ -119,5 +119,9 @@ kubectl get nodes       # to get list of nodes
 kubectl get nodes -o wide   # to get IP of the nodes
 kubectl get pods        # to get list of pods
 kubectl get pods -o wide    # to get IP of the pods
+kubectl get services # to show  the information about services
+kubectl expose pods pods-name --name name --port 80 # to allow the cluster ip to the pod
+kubectl delete pods pods-name #  to delete pods
+kubectl expose pods pods-name --name name --port 80 --type NodePort # to expose the application NodePort
+kubectl expose pods pods-name --name name --port 80 --type LoadBalancer # to expose on internet
 ```
-__prathamesh__
