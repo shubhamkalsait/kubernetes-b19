@@ -120,4 +120,11 @@ kubectl get nodes -o wide   # to get IP of the nodes
 kubectl get pods        # to get list of pods
 kubectl get pods -o wide    # to get IP of the pods
 ```
+```shell
+kubectl get services   # List all services in the namespace
+kubectl delete pod my-pod   # to delete an existing pod
+kubectl expose pod my-pod --name my-cluster --port 8080   # to allocate the cluster Ip to the pod
+kubectl expose pod my-pod --name=my-nodeport --port=80 --type=NodePort   # is used to craete a new service for a specific pod
+kubectl expose pods pods-name --name name --port 80 --type=LoadBalancer  # to expose the nodes to the internet
+```
 __prathamesh__
