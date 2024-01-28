@@ -126,4 +126,4 @@ kubectl expose pod my-pod --name=my-nodeport --port=80 --type=NodePort          
 kubectl expose pod my-pod --name=my-loadbalancer --port=80 --type=LoadBalancer   # To expose a pod named "my-pod" with a LoadBalancer service type
 ```
 ```
-__prathamesh__
+__prasad more__
