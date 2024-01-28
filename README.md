@@ -119,5 +119,11 @@ kubectl get nodes       # to get list of nodes
 kubectl get nodes -o wide   # to get IP of the nodes
 kubectl get pods        # to get list of pods
 kubectl get pods -o wide    # to get IP of the pods
+<ins>**Intra-pod communication:**</ins> communication between containers within the same pod
+<ins>**Inter-pod communication:**</ins> communication between different pods in the cluster
+kubectl expose pod <pod-name> --name <service-name> --port <target-port>   # to exposes the Pod within the cluster and create a ClusterIP
+kubectl get service   # to list the services
+kubectl delete <resource-type> <resource-name>   # to delete resources(pod, service, etc..)
+kubectl expose pod <pod-name> --name <service-name> --port <target-port> --type NodePort # to exposes the Pod outside the cluster and create a Nodeport
+kubectl expose pod <pod-name> --name <service-name> --port <target-port> --type NodePort # to distribute traffic across multiple nodes and create a LoadBalancer
 ```
-__prathamesh__
