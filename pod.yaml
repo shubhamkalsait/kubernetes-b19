@@ -1,12 +1,34 @@
+---
 apiVersion: v1
 kind: Pod
 metadata:
   name: cbz-pod
+  labels:
+    app: cbz-app
 spec:
   containers:
     - name: cbz-container
       image: httpd
       ports:
-      - name: http
-        containerPort: 80
-        protocol: TCP
+        - containerPort: 80
+    - name: tomcat-container
+      image: tomcat
+      ports:
+        - containerPort: 8080
+...
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cbz-service
+spec:
+  selector:
+    app.kubernetes.io/name: cbz-pod
+    app: cbz-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: NodePort
+...
