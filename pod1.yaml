@@ -1,14 +1,15 @@
 
-apiversion : v1
-kind : pod 
-metadata :
-    name : cbz-pod
- spec : 
-   containers :
-        -name : cbz-container
-        images : httpd
-        port :
-          name : http
-          containerport : 80
-          protocol : TCP
-      
+apiversion: v1
+kind: pod 
+metadata:
+  name: cbz-pod
+spec: 
+  containers:
+    -name: cbz-container
+     images: httpd
+      port:
+       -name: http
+        containerport: 80
+        protocol: TCP    
+
+
