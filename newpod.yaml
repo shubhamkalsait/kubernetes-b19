@@ -7,11 +7,11 @@ metadata:
     app: cbz-app
 spec:
   containers:
-    - name: nginx-container
+    - name: new-container
       image: nginx
       ports:
         - containerPort: 80
-    - name: nginx-container
+    - name: old-container
       image: nginx
       ports:
         - containerPort: 80
