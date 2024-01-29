@@ -1,3 +1,17 @@
 ---
 apiVersion: v1
 kind: Pod
+metadata:
+  name: jay-pod
+  labels:
+    app: cbz-app
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+      ports:
+        - containerPort:80
+    - name: nginx-container
+      image: nginx
+      ports:
+        - containerPort: 80
