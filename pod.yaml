@@ -11,23 +11,5 @@ spec:
       image: httpd
       ports:
         - containerPort: 80
-    - name: tomcat-container
-      image: tomcat
-      ports:
-        - containerPort: 8080
 ...
 
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: cbz-service
-spec:
-  selector:
-    app: cbz-app
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
-  type: NodePort
-...
