@@ -25,7 +25,6 @@ metadata:
 spec:
   selector:
     app.kubernetes.io/name: cbz-pod
-    app: cbz-app
   ports:
     - protocol: TCP
       port: 80
