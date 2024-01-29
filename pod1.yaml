@@ -1,0 +1,15 @@
+------
+apiversion : vi 
+kind : pod 
+metadata :
+    name : cbz-pod
+spec :
+   container :
+       -name :cbz-container
+        images : httpd
+       port :
+         -name :http
+          containerport : 80
+          protocol : TCP
+
+ ......         
