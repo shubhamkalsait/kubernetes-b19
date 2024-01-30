@@ -13,7 +13,7 @@ spec:
     #   project: Cloudblitz
     matchExpressions:
       - {key: app, operator: In, values: [my-app, cbz-app, demo-app]}
-      - {key: env, Operator: }
+      - {key: env, Operator: NotIn, values: [prod, dev]}
   template:
     metadata:
       labels:
