@@ -8,9 +8,10 @@ metadata:
   namespace: test
 spec:
   selector:
-    matchLabels:
-      app: cbz-app
-      project: Cloudblitz
+    # matchLabels:
+    #   app: cbz-app
+    #   project: Cloudblitz
+    
   template:
     metadata:
       labels:
