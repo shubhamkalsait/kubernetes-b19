@@ -12,7 +12,7 @@ spec:
     #   app: cbz-app
     #   project: Cloudblitz
     matchExpressions:
-    
+      - {}
   template:
     metadata:
       labels:
