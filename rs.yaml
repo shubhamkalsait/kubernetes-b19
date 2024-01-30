@@ -11,6 +11,7 @@ spec:
     # matchLabels:
     #   app: cbz-app
     #   project: Cloudblitz
+    matchExpressions:
     
   template:
     metadata:
