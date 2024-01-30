@@ -1,0 +1,30 @@
+---
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata: 
+  name: my-rs
+  labels:
+    app: cbz-app
+  namespace: test
+spec:
+  selector:
+    # matchLabels:
+    #   app: cbz-app
+    #   project: Cloudblitz
+    matchExpressions:
+      - {key: app, operator: In, values: [my-app, cbz-app, demo-app]}
+      - {key: env, operator: NotIn, values: [prod, dev]}
+  template:
+    metadata:
+      labels:
+        app: cbz-app
+        env: test
+        project: Cloudblitz
+    spec:
+      containers:
+        - name: cbz-container
+          image: httpd
+          ports:
+            - containerPort: 80
+  replicas: 3
+...
