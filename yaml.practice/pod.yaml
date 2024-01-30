@@ -1,0 +1,18 @@
+---
+apiversion: v1
+kind: pod
+metadata: 
+  name: cdz-pod
+  labels:
+   - app: cdz-app
+spec:
+  container:
+   - name: nginx-container
+     image: nginx
+     ports: 
+     - containerPort: 80 
+   - name: tomcat-container
+     image: tomcat
+     ports: 
+     - containerPorts: 8080
+...       
