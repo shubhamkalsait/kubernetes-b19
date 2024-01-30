@@ -1,18 +1,33 @@
 ---
-apiversion: v1
-kind: pod
-metadata: 
-  name: cdz-pod
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cbz-pod
   labels:
-   - app: cdz-app
+    app: cbz-app
 spec:
-  container:
-   - name: nginx-container
-     image: nginx
-     ports: 
-     - containerPort: 80 
-   - name: tomcat-container
-     image: tomcat
-     ports: 
-     - containerPorts: 8080
-...       
+  containers:
+    - name: cbz-container
+      image: httpd
+      ports:
+        - containerPort: 80
+    - name: tomcat-container
+      image: tomcat
+      ports:
+        - containerPort: 8080
+...
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cbz-service
+spec:
+  selector:
+    app: cbz-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: NodePort
+...
