@@ -22,3 +22,6 @@ spec:
   strategy:
     type: RollingUpdate
 ...
+
+apiVersion: v1
+kind: Service
