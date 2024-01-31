@@ -20,4 +20,5 @@ spec:
               value: "shubham"
   replicas: 3
   selector:
-    
+    matchLabels:
+      app: mysql
