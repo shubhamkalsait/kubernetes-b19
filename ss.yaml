@@ -14,5 +14,7 @@ spec:
           ports:
             - containerPort: 3306
           env:
-          - name: MYSQL_ROOT_PASSWORD
-            value: "redhat123"
+            - name: MYSQL_ROOT_PASSWORD
+              value: "redhat123"
+            - name: USER_NAME
+              value: "shubham"
