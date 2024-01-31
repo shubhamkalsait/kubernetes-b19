@@ -5,9 +5,8 @@ metadata:
  label:
 spec:
  containers:
-  -name: cbz-container
+ - name: cbz-container
    image: httpd
-  
- -containerport: 80
-    port:
-    protocol: tcp
+   ports:
+    - containerPort: 80
+
