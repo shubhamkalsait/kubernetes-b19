@@ -20,4 +20,4 @@ spec:
     matchLabels:
       app: my-app
   strategy:
-    type: RollingUpdateg
+    type: RollingUpdate
