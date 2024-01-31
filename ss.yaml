@@ -4,4 +4,7 @@ metadata:
   name: my-sts
 spec:
   template:
-    
+    metadata:
+      labels:
+        app: mysql
+      
