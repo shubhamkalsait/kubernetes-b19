@@ -16,4 +16,5 @@ spec:
             containerPort: 80
   replicas: 3
   selector:
-    
+    matchLabels:
+      
