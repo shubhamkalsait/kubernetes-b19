@@ -2,4 +2,7 @@ apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: my-ds
+  labels:
+    app: monitoring
 spec:
+  
