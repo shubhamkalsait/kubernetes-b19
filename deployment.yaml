@@ -14,5 +14,6 @@ spec:
         - image: httpd
           ports:
             containerPort: 80
-  replicas:
+  replicas: 3
+  selector:
     
