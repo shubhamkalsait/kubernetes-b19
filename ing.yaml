@@ -15,7 +15,7 @@ spec:
     secretName: kuard-secret
   defaultBackend:
     service:
-      name: "wordpress-service"
+      name: "kuard"
       port:
         number: 80
   rules:
