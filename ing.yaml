@@ -13,6 +13,11 @@ spec:
   - hosts:
     - coe.ops.getdyl.com
     secretName: kuard-secret
+  defaultBackend:
+    resource:
+      apiGroup: k8s.example.com
+      kind: StorageBucket
+      name: static-assets
   rules:
   - host: coe.ops.getdyl.com
     http:
