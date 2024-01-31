@@ -16,5 +16,6 @@ spec:
           ports:
             - containerPort: 24224
   selector:
+    matchLabels:
     app: monitoring
     
