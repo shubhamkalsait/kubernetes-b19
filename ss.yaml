@@ -8,4 +8,6 @@ spec:
       labels:
         app: mysql
     spec:
-      
+      containers:
+        - name: mysql-container
+          
