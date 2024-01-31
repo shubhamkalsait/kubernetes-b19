@@ -10,5 +10,13 @@ spec:
     - name: my-httpd-container
       image: httpd  
       ports:
-        - containerPort: 80  
+        - containerPort: 80    
+    - name: my-nginx-container
+      image: nginx
+      port: 
+        - containerPort: 80
+    - name: my-tomcat-container
+      image: tomcat
+      port: 
+        - containerPort: 8080    
 ...  
