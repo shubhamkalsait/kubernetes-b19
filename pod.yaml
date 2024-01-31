@@ -11,8 +11,4 @@ spec:
       image: nginx  
       port:
         containerPort: 80  
-    - name: my-tomcat-container
-      image: tomcat
-      port: 
-        containerPort: 8080
 ...  
