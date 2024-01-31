@@ -8,12 +8,12 @@ metadata:
   namespace: test
 spec:
   selector:
-    # matchLabels:
-    #   app: cbz-app
-    #   project: Cloudblitz
-    matchExpressions:
-      - {key: app, operator: In, values: [my-app, cbz-app, demo-app]}
-      - {key: env, operator: NotIn, values: [prod, dev]}
+       matchLabels:
+       app: cbz-app
+       project: Cloudblitz
+    #matchExpressions:
+      #- {key: app, operator: In, values: [my-app, cbz-app, demo-app]}
+      #- {key: env, operator: NotIn, values: [prod, dev]}
   template:
     metadata:
       labels:
