@@ -16,7 +16,8 @@ spec:
   defaultBackend:
     service:
       name: "wordpress-service"
-      
+      port:
+        number: 80
   rules:
   - host: coe.ops.getdyl.com
     http:
