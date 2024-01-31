@@ -16,6 +16,7 @@ spec:
   defaultBackend:
     service:
       name: "wordpress-service"
+      
   rules:
   - host: coe.ops.getdyl.com
     http:
