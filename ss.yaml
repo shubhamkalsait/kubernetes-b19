@@ -13,3 +13,4 @@ spec:
           image: mysql
           ports:
             - containerPort: 3306
+          
