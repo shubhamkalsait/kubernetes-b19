@@ -7,8 +7,8 @@ metadata:
     app: my-pract-app
 spec:
   containers:
-    - name: my-nginx-container
-      image: nginx  
+    - name: my-httpd-container
+      image: httpd  
       port:
         containerPort: 80  
 ...  
