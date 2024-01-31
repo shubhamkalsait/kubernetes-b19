@@ -15,7 +15,7 @@ spec:
     secretName: kuard-secret
   defaultBackend:
     service:
-      name: 
+      name: "wordpress"
   rules:
   - host: coe.ops.getdyl.com
     http:
