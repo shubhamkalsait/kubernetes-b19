@@ -12,3 +12,18 @@ spec:
       ports:
       - containerPort: 80
 ...      
+
+---
+apiVersion: v1
+kind: Service
+metadata: 
+  name: my-service
+spec:  
+  selector: 
+    app: my-pract-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: NodePort
+...    
