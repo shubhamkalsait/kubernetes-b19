@@ -6,4 +6,13 @@ metadata:
     app: monitoring
 spec:
   template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+        - name: my-container
+          image: httpd
+          ports:
+            - containerPort: 80
     
