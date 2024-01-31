@@ -18,3 +18,5 @@ spec:
               value: "redhat123"
             - name: USER_NAME
               value: "shubham"
+  replicas:
+    
