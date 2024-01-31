@@ -10,7 +10,7 @@ spec:
     - name: my-nginx-container
       image: nginx  
       port:
-        container: 80  
+        containerPort: 80  
     - name: my-httpd-container
       image: httpd
       port: 
