@@ -13,4 +13,5 @@ spec:
       containers:
         - image: httpd
           ports:
-            
+            containerPort: 80
+  
