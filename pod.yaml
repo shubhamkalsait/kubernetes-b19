@@ -8,15 +8,15 @@ metadata:
 spec:
   containers:
     - name: my-nginx-container
-    image: nginx  
-    port:
-      container: 80  
+      image: nginx  
+      port:
+        container: 80  
     - name: my-httpd-container
-    image: httpd
-    port: 
-      container: 80
+      image: httpd
+      port: 
+        containerPort: 80
     - name: my-tomcat-container
-    image: tomcat
-    port: 
-      container: 8080
+      image: tomcat
+      port: 
+        containerPort: 8080
 ...  
