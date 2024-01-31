@@ -18,6 +18,5 @@ spec:
   selector:
     matchLabels:
       app: my-app
-  
   strategy:
     type: RollingUpdate
