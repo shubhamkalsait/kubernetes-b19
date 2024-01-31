@@ -11,10 +11,6 @@ spec:
       image: httpd  
       ports:
         - containerPort: 80    
-    - name: my-nginx-container
-      image: nginx
-      port: 
-        - containerPort: 80
     - name: my-tomcat-container
       image: tomcat
       port: 
