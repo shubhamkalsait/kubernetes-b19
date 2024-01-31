@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
         - name: monitoring
-          image: 
+          image: cloudwatch
           ports:
             - containerPort: 80
   selector:
