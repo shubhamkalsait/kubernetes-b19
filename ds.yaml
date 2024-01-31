@@ -8,13 +8,13 @@ spec:
   template:
     metadata:
       labels:
-        app: my-app
+        app: monitoring
     spec:
       containers:
-        - name: my-container
+        - name: monitoring
           image: httpd
           ports:
             - containerPort: 80
   selector:
-    
+    app: monitoring
     
