@@ -21,3 +21,4 @@ spec:
       app: my-app
   strategy:
     type: RollingUpdate
+...
