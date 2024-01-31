@@ -10,4 +10,6 @@ spec:
     spec:
       containers:
         - name: mysql-container
-          
+          image: mysql
+          ports:
+            - containerPort: 3306
