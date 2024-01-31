@@ -28,4 +28,7 @@ kind: Service
 metadata:
   name: my-svc
 spec:
-  
+  ports:
+    - port: 80
+      targetPort: 80
+      
