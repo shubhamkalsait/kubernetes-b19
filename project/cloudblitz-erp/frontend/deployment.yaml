@@ -10,4 +10,7 @@ spec:
       labels:
         app: frontend
     spec:
-      
+      containers:
+        - name: frontend
+          image:
+          
