@@ -20,4 +20,4 @@ spec:
     matchLabels:
       app: backend
   strategy:
-    
+    type: RollingUpdate
