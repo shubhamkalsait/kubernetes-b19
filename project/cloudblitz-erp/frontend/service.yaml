@@ -3,4 +3,6 @@ kind: Service
 metadata:
   name: frontend-service
   labels:
-    
+    app: frontend
+spec:
+  
