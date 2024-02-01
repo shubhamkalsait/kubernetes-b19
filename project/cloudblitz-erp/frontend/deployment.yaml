@@ -3,4 +3,6 @@ kind: Deployment
 metadata:
   name: frontend
   labels:
-    
+    app: frontend
+spec:
+  
