@@ -15,4 +15,5 @@ spec:
           image: shubhamkalsait1/frontend-app:latest
           ports:
             - containerPort: 80
+  replicas: 3
   
