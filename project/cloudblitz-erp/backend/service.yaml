@@ -6,4 +6,6 @@ metadata:
     app: backend
 spec:
   ports:
-    - port: 
+    - port: 80
+      targetPort: 8080
+      
