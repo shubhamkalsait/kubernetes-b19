@@ -6,4 +6,8 @@ metadata:
     app: backend
 spec:
   template:
-    
+    metadata:
+      labels:
+        app: backend
+    spec:
+      
