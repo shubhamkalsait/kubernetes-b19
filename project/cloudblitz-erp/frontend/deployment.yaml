@@ -13,4 +13,6 @@ spec:
       containers:
         - name: frontend
           image: shubhamkalsait1/frontend-app:latest
-          
+          ports:
+            - port: 80
+              
