@@ -12,5 +12,4 @@ spec:
     spec:
       containers:
         - name: frontend
-          image:
-          
+          image: shubhamkalsait1/
