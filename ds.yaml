@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: my-ds
+  labels:
+    app: monitoring
+spec:
+  template:
+    metadata:
+      labels:
+        app: monitoring
+    spec:
+      containers:
+        - name: monitoring
+          image: quay.io/fluentd_elasticsearch/fluentd:v2.5.2
+          ports:
+            - containerPort: 24224
+  selector:
+    matchLabels:
+      app: monitoring
+    
