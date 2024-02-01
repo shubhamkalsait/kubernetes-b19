@@ -13,4 +13,6 @@ spec:
       containers:
         - name: backend
           image:
-          
+          ports:
+            - containerPort: 8080
+  
