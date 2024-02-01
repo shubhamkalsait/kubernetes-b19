@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: 
+          image: shubhamkalsait1/backend-app:latest
           ports:
             - containerPort: 8080
   replicas: 3
