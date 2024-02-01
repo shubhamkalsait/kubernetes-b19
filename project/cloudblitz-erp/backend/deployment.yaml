@@ -15,4 +15,5 @@ spec:
           image:
           ports:
             - containerPort: 8080
-  
+  replicas: 3
+  selector
