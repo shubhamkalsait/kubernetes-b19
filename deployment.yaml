@@ -16,6 +16,7 @@ spec:
           image: httpd
           ports:
             - containerPort: 80
+          
   replicas: 3
   selector:
     matchLabels:
