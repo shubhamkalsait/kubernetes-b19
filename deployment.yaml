@@ -21,8 +21,8 @@ spec:
               cpu: 200m
               memory: 100Mi
             limit:
-              - cpu: 400mi
-              - memory: 200m
+              cpu: 400m
+              memory: 200Mi
   replicas: 3
   selector:
     matchLabels:
