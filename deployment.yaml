@@ -20,7 +20,8 @@ spec:
             request:
               - cpu: 200mi
               - memory: 100m
-              
+            limit:
+              - cpu: 400
   replicas: 3
   selector:
     matchLabels:
