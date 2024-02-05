@@ -19,6 +19,8 @@ spec:
           resource:
             request:
               - cpu: 200mi
+              - memory: 100m
+              
   replicas: 3
   selector:
     matchLabels:
