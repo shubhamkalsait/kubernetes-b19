@@ -5,6 +5,7 @@ resource "aws_security_group" "my_sg" {
     name = "new-sg"
     description = " allow traffic on port 80 and 22"
     ingress {
-        cidr
+        cidr_block = "0.0.0.0/0"
+        
     }
 }
