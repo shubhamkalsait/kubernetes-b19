@@ -1,7 +1,7 @@
 
 #create a security group(web_gp) that allows internet traffic on port 80 and 22, also allow outgoing traffic on all ports
 
-resource "aws_security_group" "my_sg" {
+resource "aws_security_group" "web_gp" {
     name = "new-sg"
     description = " allow traffic on port 80 and 22"
     ingress {
