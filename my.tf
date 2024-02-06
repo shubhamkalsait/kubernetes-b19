@@ -3,5 +3,6 @@
 
 resource "aws_security_group" "my_sg" {
     name = "new-sg"
+    description = " allow traffic on port 80 and 22"
     
 }
