@@ -20,9 +20,9 @@ resource "aws_security_group" "my_sg" {
     }
     egress {
         cidr_block = "0.0.0.0/0"
-        port = 
-        to_port = 22
-        description = "ssh"
-        protocol = "TCP" 
+        port = 0
+        to_port = 0
+        description = "all"
+        protocol = "-1" 
     }
 }
