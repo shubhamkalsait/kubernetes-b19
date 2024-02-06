@@ -23,6 +23,6 @@ resource "aws_security_group" "web_gp" {
         port = 0
         to_port = 0
         description = "all"
-        protocol = "-1"   all *
+        protocol = "-1"
     }
 }
