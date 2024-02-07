@@ -11,6 +11,13 @@ spec:
           pathType: Prefix
           backend:
             service:
-              name: mobile
+              name: mobile-svc
+              port:
+                number: 80
+        - path: /mobile
+          pathType: Prefix
+          backend:
+            service:
+              name: mobile-svc
               port:
                 number: 80
