@@ -25,3 +25,5 @@ spec:
               name: laptop-svc
               port:
                 number: 80
+
+ROUTE53
