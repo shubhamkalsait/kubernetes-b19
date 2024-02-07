@@ -14,10 +14,10 @@ spec:
               name: mobile-svc
               port:
                 number: 80
-        - path: /mobile
+        - path: /laptop
           pathType: Prefix
           backend:
             service:
-              name: mobile-svc
+              name: laptop-svc
               port:
                 number: 80
