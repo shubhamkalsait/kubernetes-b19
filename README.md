@@ -122,5 +122,5 @@ kubectl get pods -o wide    # to get IP of the pods
 ```
 # INGRESS
 
-- INGRESS: 
+- INGRESS: https://kubernetes.io/docs/concepts/services-networking/ingress/
 - NGINX INGRESS CONTROLLER: https://docs.nginx.com/nginx-ingress-controller/installation/installing-nic/installation-with-manifests/
