@@ -11,6 +11,6 @@ spec:
           pathType: Prefix
           backend:
             service:
-              name: mob
+              name: mobile
               port:
                 number: 80
