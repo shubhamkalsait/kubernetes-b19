@@ -12,14 +12,14 @@ spec:
         app: laptop
     spec:
       containers:
-        - name: mobile-c
+        - name: laptop-c
           image: httpd
           ports:
             - containerPort: 80
   replicas: 3
   selector:
     matchLabels:
-      app: mobile
+      app: laptop
   strategy:
     type: RollingUpdate
 ...
@@ -27,7 +27,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mobile-svc
+  name: laptop-svc
 spec:
   ports:
     - port: 80
