@@ -3,7 +3,7 @@ kind: Ingress
 metadata: 
   name: my-ingress
 spec:
-  ingressClassName: 
+  ingressClassName: nginx
   rules:
     - http:
         paths:
