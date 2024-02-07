@@ -22,6 +22,6 @@ spec:
           pathType: Prefix
           backend:
             service:
-              name: mobile-svc
+              name: laptop-svc
               port:
                 number: 80
