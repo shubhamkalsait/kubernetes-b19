@@ -4,12 +4,12 @@ kind: Deployment
 metadata:
   name: mobile-deployment
   labels:
-    app: my-app
+    app: mobile
 spec:
   template:
     metadata:
       labels:
-        app: my-app
+        app: mobile
     spec:
       containers:
         - name: my-container
