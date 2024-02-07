@@ -122,4 +122,4 @@ kubectl get pods -o wide    # to get IP of the pods
 ```
 # INGRESS
 
-- NGINX
+- NGINX INGRESS CONTROLLER: 
