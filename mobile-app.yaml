@@ -12,7 +12,7 @@ spec:
         app: mobile
     spec:
       containers:
-        - name: my-container
+        - name: mobile-c
           image: httpd
           ports:
             - containerPort: 80
