@@ -6,7 +6,11 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
-  
+  defaultBackend:
+    service:
+      name: test
+      port:
+        number: 80
   rules:
     - host: "a1a3676ea3a8d4d7a9e3025f6de45126-294ed71ef4fe261d.elb.us-east-1.amazonaws.com"
       http:
