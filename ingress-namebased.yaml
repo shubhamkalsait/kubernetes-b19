@@ -25,7 +25,3 @@ spec:
               name: laptop-svc
               port:
                 number: 80
-
-ROUTE53
-mobile.cbz.com A LOADBALANCER-ENDPOINT
-laptop.cbz.com A LOADBALANCER-ENDPOINT
