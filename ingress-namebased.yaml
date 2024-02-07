@@ -27,4 +27,4 @@ spec:
                 number: 80
 
 ROUTE53
-mobile.cbz.com A 
+mobile.cbz.com A LOADBALANCER-ENDPOINT
