@@ -3,3 +3,4 @@ kind: Ingress
 metadata: 
   name: my-ingress
 spec:
+  ingressClassName: 
