@@ -28,3 +28,4 @@ spec:
 
 ROUTE53
 mobile.cbz.com A LOADBALANCER-ENDPOINT
+laptop.cbz.com A LOADBALANCER-ENDPOINT
