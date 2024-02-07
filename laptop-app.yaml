@@ -2,14 +2,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mobile-deployment
+  name: laptop-deployment
   labels:
-    app: mobile
+    app: laptop
 spec:
   template:
     metadata:
       labels:
-        app: mobile
+        app: laptop
     spec:
       containers:
         - name: mobile-c
