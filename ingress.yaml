@@ -5,4 +5,12 @@ metadata:
 spec:
   ingressClassName: 
   rules:
-  
+    - http:
+        paths:
+        - path: /testpath
+          pathType: Prefix
+          backend:
+            service:
+              name: test
+              port:
+                number: 80
