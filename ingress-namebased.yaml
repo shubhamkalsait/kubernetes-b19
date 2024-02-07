@@ -15,3 +15,13 @@ spec:
               name: mobile-svc
               port:
                 number: 80
+    - host: "laptop.cbz.com"
+      http:
+        paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: mobile-svc
+              port:
+                number: 80
