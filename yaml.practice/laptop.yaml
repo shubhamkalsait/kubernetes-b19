@@ -1,0 +1,25 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: laptop-deployment
+  labels:
+    app: laptop
+spec:
+  template:
+    metadata:
+      labels:
+        app: laptop
+    spec:
+      containers:
+        - name: laptop-c
+          image: nginx
+          ports:
+            - containerPort: 80
+  replicas: 3
+  selector:
+    matchLabels:
+      app: laptop
+  strategy:
+    type: RollingUpdate
+...
