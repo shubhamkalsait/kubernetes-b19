@@ -1,0 +1,38 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mobile-deployment
+  labels:
+    app: mobile
+spec:
+  template:
+    metadata:
+      labels:
+        app: mobile
+    spec:
+      containers:
+        - name: mobile-c
+          image: httpd
+          ports:
+            - containerPort: 80
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mobile
+  strategy:
+    type: RollingUpdate
+...
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mobile-svc
+spec:
+  ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP
+  selector:
+    app: mobile
+...
