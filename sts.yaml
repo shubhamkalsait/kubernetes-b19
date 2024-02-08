@@ -43,7 +43,9 @@ spec:
                 secretKeyRef:
                   name: my-secret
                   key: DATABASE_PASS
-            - name: 
+            - name: USER_NAME
+              valueFrom:
+                secret
 
   replicas: 3
   selector:
