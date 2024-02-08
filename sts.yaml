@@ -21,7 +21,7 @@ spec:
           #   - name: USER_NAME
           #     value: "shubham"
           env:
-            - 
+            - name: MYSQL_ROOT_PASSWORD
   replicas: 3
   selector:
     matchLabels:
