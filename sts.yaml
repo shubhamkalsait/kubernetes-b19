@@ -38,7 +38,9 @@ spec:
 
           ### Pass environment veriable as Secret
           env:
-            - name: 
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:
+                secret
 
   replicas: 3
   selector:
