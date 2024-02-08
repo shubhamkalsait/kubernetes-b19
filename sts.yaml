@@ -23,8 +23,8 @@ spec:
           env:
             - name: MYSQL_ROOT_PASSWORD
               valueFrom:
-                congigMapKeyRef:
-                  
+                configMapKeyRef:
+
   replicas: 3
   selector:
     matchLabels:
