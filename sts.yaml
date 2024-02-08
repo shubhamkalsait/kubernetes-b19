@@ -36,7 +36,9 @@ spec:
           #         name: mysql-creds
           #         key: DB_USER
 
-          
+          ### Pass environment veriable as Secret
+          env:
+            - name: 
 
   replicas: 3
   selector:
