@@ -24,7 +24,8 @@ spec:
             - name: MYSQL_ROOT_PASSWORD
               valueFrom:
                 configMapKeyRef:
-                  name: mysql-cred
+                  name: mysql-creds
+                  key: 
 
   replicas: 3
   selector:
