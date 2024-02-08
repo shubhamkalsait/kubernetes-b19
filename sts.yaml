@@ -25,7 +25,7 @@ spec:
               valueFrom:
                 configMapKeyRef:
                   name: mysql-creds
-                  key: 
+                  key: DB_PASSWORD
 
   replicas: 3
   selector:
