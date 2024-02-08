@@ -36,6 +36,8 @@ spec:
           #         name: mysql-creds
           #         key: DB_USER
 
+          
+
   replicas: 3
   selector:
     matchLabels:
