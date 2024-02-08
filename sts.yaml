@@ -29,8 +29,8 @@ spec:
             - name: USER_NAME
               valueFrom:
                 configMapKeyRef:
-                  name: DB_USER
-                  key: 
+                  name: mysql-creds
+                  key: DB_USER
 
   replicas: 3
   selector:
