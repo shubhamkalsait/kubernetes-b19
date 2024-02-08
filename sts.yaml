@@ -40,7 +40,10 @@ spec:
           env:
             - name: MYSQL_ROOT_PASSWORD
               valueFrom:
-                secret
+                secretKeyRef:
+                  name: my-secret
+                  key: DATABASE_PASS
+            - name: 
 
   replicas: 3
   selector:
