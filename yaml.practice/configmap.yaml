@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+- name: mysql-creds
+data: 
+  DB_PASSWORD: "redhat123"
+  DB_USER: "linux"
+  DB_HOST: "192.31.28.1"
+  DB_NAME: "studentapp"
