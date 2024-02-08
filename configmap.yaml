@@ -3,4 +3,6 @@ kind: ConfigMap
 metadata: 
   name: mysql-creds
 data:
-  DB_PASSWORD: "redhat"
+  DB_PASSWORD: "redhat123"
+  DB_USER: "linux"
+  DB_HOST: ""
