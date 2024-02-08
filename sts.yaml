@@ -29,7 +29,8 @@ spec:
             - name: USER_NAME
               valueFrom:
                 configMapKeyRef:
-                  name: 
+                  name: DB_USER
+                  key: 
 
   replicas: 3
   selector:
