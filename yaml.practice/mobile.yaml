@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: mobile-c
-          image: httpd
+          image: abhi6093/cdec-b19:latest
           ports:
             - containerPort: 80
   replicas: 3
