@@ -24,6 +24,7 @@ spec:
             - name: MYSQL_ROOT_PASSWORD
               valueFrom:
                 configMapKeyRef:
+                  name: 
 
   replicas: 3
   selector:
