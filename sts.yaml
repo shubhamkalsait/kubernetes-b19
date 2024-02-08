@@ -41,12 +41,12 @@ spec:
             - name: MYSQL_ROOT_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: my-secret
+                  name: mysql-secret
                   key: DATABASE_PASS
             - name: USER_NAME
               valueFrom:
                 secretKeyRef:
-                  name: my-secret
+                  name: mysql-secret
                   key: DATABASE_USER
 
   replicas: 3
