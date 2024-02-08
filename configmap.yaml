@@ -5,4 +5,5 @@ metadata:
 data:
   DB_PASSWORD: "redhat123"
   DB_USER: "linux"
-  DB_HOST: ""
+  DB_HOST: "192.168.0.11"
+  
