@@ -16,7 +16,7 @@ spec:
           ports:
             - containerPort: 3306
 
-      ###   
+          ### Pass environment variables as Direct Method   
           # env:
           #   - name: MYSQL_ROOT_PASSWORD
           #     value: "redhat123"
