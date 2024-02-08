@@ -1,0 +1,27 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata: 
+  name: my-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: "mobile.cbz.com"
+      http:
+        paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: mobile-svc
+              port:
+                number: 80
+    - host: "laptop.cbz.com"
+      http:
+        paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: laptop-svc
+              port:
+                number: 80
