@@ -23,17 +23,18 @@ spec:
           #   - name: USER_NAME
           #     value: "shubham"
 
-          env:
-            - name: MYSQL_ROOT_PASSWORD
-              valueFrom:
-                configMapKeyRef:
-                  name: mysql-creds
-                  key: DB_PASSWORD
-            - name: USER_NAME
-              valueFrom:
-                configMapKeyRef:
-                  name: mysql-creds
-                  key: DB_USER
+          ### Pass environment variable as ConfigMap
+          # env:
+          #   - name: MYSQL_ROOT_PASSWORD
+          #     valueFrom:
+          #       configMapKeyRef:
+          #         name: mysql-creds
+          #         key: DB_PASSWORD
+          #   - name: USER_NAME
+          #     valueFrom:
+          #       configMapKeyRef:
+          #         name: mysql-creds
+          #         key: DB_USER
 
   replicas: 3
   selector:
