@@ -4,4 +4,5 @@ metadata:
   name: my-pv
 spec:
   storageClassName: ""
-
+ capacity:
+    storage: 5Gi
