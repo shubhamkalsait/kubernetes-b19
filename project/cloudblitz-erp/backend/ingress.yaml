@@ -8,7 +8,7 @@ spec:
   ingressClassName: nginx
   defaultBackend:
     service:
-      name: laptop-svc
+      name: 
       port:
         number: 80
   rules:
