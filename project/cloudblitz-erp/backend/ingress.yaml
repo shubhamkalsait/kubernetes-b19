@@ -12,7 +12,7 @@ spec:
       port:
         number: 8080
   rules:
-    - host: "NODEPORT"
+    - host: "NODEIP:NODEPORT"
       http:
         paths:
         - path: /mobile
