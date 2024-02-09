@@ -3,4 +3,7 @@ kind: PersistentVolume
 metadata:
   name: my-pv
 spec:
-  
+  storageClassName: ""
+  claimRef:
+    name: foo-pvc
+    namespace: foo
