@@ -12,3 +12,11 @@ spec:
   persistentVolumeReclaimPolicy: Recycle
   local:
     path: /mnt
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - k8s-worker-01
