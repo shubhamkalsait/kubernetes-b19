@@ -15,7 +15,7 @@ spec:
     - host: "NODEIP:NODEPORT"
       http:
         paths:
-        - path: /mobile
+        - path: /student
           pathType: Prefix
           backend:
             service:
