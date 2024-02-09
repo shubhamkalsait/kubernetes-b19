@@ -11,4 +11,4 @@ spec:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Recycle
   local:
-    path: /data/volumes/pv1
+    path: /mnt
