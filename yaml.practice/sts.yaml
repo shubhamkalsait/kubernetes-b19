@@ -23,16 +23,16 @@ spec:
           # value: "shubham"
           env:
            - name: MYSQL_ROOT_PASSWORD
-              valueFrom:
+             valueFrom:
               ConfigMapKeyRef:
-                -name: mysql-creds
-                 key: DB_PASSWORD
+                -name: 
+                  key: DB_PASSWORD
            - name: USER_NAME
-              valueFrom:
+             valueFrom:
               ConfigMapKeyRef:
-                -name: mysql-creds 
+                -name:
                  key: DB_USER
-                 
+
   replicas: 3
   selector:
     matchLabels:
