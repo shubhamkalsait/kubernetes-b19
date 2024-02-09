@@ -10,4 +10,5 @@ spec:
         - containerPort: 80
   volumes:
     - name: new-vol
-      
+      persistentVolumeClaim:
+        claimName: 
