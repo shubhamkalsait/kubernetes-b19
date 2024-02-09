@@ -10,3 +10,5 @@ spec:
   accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Recycle
+  local:
+    path: /data/volumes/pv1
