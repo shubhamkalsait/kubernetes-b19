@@ -10,3 +10,4 @@ spec:
     requests:
       storage: 4Gi
   volumeMode: Filesystem
+  volumeName: foo-pv
