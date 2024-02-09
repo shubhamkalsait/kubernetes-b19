@@ -9,7 +9,7 @@ spec:
       ports:
         - containerPort: 80
       volumeMounts:
-        
+        - mountPath: /mnt
   volumes:
     - name: new-vol
       persistentVolumeClaim:
