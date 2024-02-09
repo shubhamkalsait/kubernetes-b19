@@ -8,6 +8,8 @@ spec:
       image: nginx
       ports:
         - containerPort: 80
+      volumeMounts:
+        
   volumes:
     - name: new-vol
       persistentVolumeClaim:
