@@ -17,6 +17,7 @@ spec:
         - containerPort: 8080
   nodeSelector:
     hostname: my-node-1
+  nodeAffinity:
 ...
 
 ---
