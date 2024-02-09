@@ -7,3 +7,5 @@ spec:
   capacity:
     storage: 5Gi
   volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
