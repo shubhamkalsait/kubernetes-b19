@@ -8,4 +8,6 @@ spec:
       image: nginx
       ports:
         - containerPort: 80
-  
+  volumes:
+    - name: new-vol
+      
