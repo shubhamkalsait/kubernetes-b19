@@ -1,12 +1,18 @@
-apiversion: app/v1
+apiversion: app/V1
 kind: deployment
 metadata:
- name: cbz-app
- label:
+ name: app-deployment
+   label:
+     -name: my-app
 spec:
+ template:
+   metadata:
+     -name: app-deployment
+       label:
+       -app: my-app
 containers: 
- name: cbz-containers
- imagename: httpd
-port:
- port: 80
-  
+   -name: cbz-containers
+     -image: httpd
+   ports
+   -containersPort: 80
+   
