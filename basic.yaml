@@ -8,5 +8,6 @@ spec:
  - name: cbz-container
    image: httpd
    ports:
+    -name: httpd
      - containerPorts: 80
-       localhost: 8080
+       protocol: Tcp    
