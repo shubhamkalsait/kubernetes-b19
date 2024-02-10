@@ -10,4 +10,3 @@ spec:
    ports:
      - containerPorts: 80
        localhost: 8080
-       
