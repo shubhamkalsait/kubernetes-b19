@@ -1,0 +1,12 @@
+apiversion: app/v1
+kind: deployment
+metadata:
+ name: cbz-app
+ label:
+spec:
+containers: 
+ name: cbz-containers
+ imagename: httpd
+port:
+ port: 80
+  
