@@ -8,4 +8,4 @@ spec:
  - name: cbz-container
    image: httpd
    ports:
-    - containerPort: 80
+     - containerPorts: 8080
