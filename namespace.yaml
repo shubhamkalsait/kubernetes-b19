@@ -11,8 +11,8 @@ spec:
       label:
        name: my-app
 spec:
- image: 
-   name: httpd
+   image: 
+     name: httpd
 ports:
    name:htppd
      port: 80
