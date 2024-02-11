@@ -14,5 +14,5 @@ containers:
    -name: cbz-containers
      -image: httpd
    ports
+   -targetports:80
    -containersPort: 80
-   

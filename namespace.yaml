@@ -1,0 +1,18 @@
+appversion: app/v1
+kind: namespace
+metadata:
+  name: app-namespace
+   label:
+    name: my-app
+spec:
+  templete: 
+   metadata:
+     name: app-namespace
+      label:
+       name: my-app
+spec:
+ image: 
+   name: httpd
+ports:
+   name:htppd
+     port: 80
