@@ -1,0 +1,17 @@
+appversion: app/v1
+kind: service
+metadata:
+ name: app-service
+   label:
+    name: my-app
+spec:
+ templete:
+   metadata:
+    -name: app-service
+     label:
+     app: my-app
+spec:
+ ports:
+   targetport: 80
+    containerport: 80
+     protcol: TCP 

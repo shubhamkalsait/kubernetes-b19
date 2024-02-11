@@ -9,5 +9,6 @@ spec:
    image: httpd
    ports:
     -name: httpd
-     - containerPorts: 80
+     - containerPorts: 8080
        protocol: Tcp    
+
